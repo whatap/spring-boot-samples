@@ -11,7 +11,9 @@
     <name>spring-webflux</name>
 
     <modules>
-        <module>spring-webflux-example</module>
+        <module>webflux-netty-example</module>
+        <module>webflux-tomcat-example</module>
+        <module>webflux-undertow-example</module>
     </modules>
 
 </project>
