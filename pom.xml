@@ -12,7 +12,6 @@
 
     <modules>
         <module>spring-r2dbc</module>
-        <module>spring-cloud-gateway</module>
         <module>spring-kafka</module>
         <module>spring-webflux</module>
     </modules>
