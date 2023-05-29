@@ -11,8 +11,9 @@
     <name>spring-boot-samples</name>
 
     <modules>
-        <module>spring-r2dbc</module>
+        <module>spring-gateway</module>
         <module>spring-kafka</module>
+        <module>spring-r2dbc</module>
         <module>spring-webflux</module>
     </modules>
 
