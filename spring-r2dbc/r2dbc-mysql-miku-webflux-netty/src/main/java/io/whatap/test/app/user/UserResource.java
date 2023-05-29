@@ -39,7 +39,7 @@ public class UserResource {
         user.setInfo("qazwsxedcrfvtgbyhnujmikqazwsxedcrfvtgbyhnujmikqazwsxedcrfvtgbyhnujmikqazwsxedcrfvtgbyhnujmikqazwsxedcrfvtgbyhnujmikqazwsxedcrfvtgbyhnujmikqazwsxedcrfvtgbyhnujmik");
         user.setCreatedAt(LocalDateTime.now());
 
-        return Mono.just(userRepository.save(user).subscribe());
+        return userRepository.save(user);
     }
 
     @GetMapping(value = "/save-all")
