@@ -57,3 +57,69 @@ weaving=spring-boot-3.x,tomcat10
 --add-opens=java.base/java.lang=ALL-UNNAMED
 ```
 
+<br/>
+
+## 테스트 
+
+### spring-gateway
+
+```
+curl http://localhost:8080
+
+curl http://localhost:8080/redirect
+```
+
+
+### spring-kafka
+
+```
+curl http://localhost:8080/api/user/kafka/test?message={message}
+```
+
+
+### spring-r2dbc
+
+테이블 생성  
+```
+CREATE TABLE tb_post(id BIGINT AUTO_INCREMENT, title varchar(255), author varchar(255), content TEXT, PRIMARY KEY (id));
+CREATE TABLE tb_user(id BIGINT AUTO_INCREMENT, name varchar(45) NOT NULL, age INT NOT NULL, info  TEXT, ord decimal, created_at datetime, PRIMARY KEY (id));
+```
+
+tb_post 
+```
+curl http://localhost:8080/api/posts
+
+curl http://localhost:8080/api/posts/find?title={title}
+
+curl http://localhost:8080/api/posts/{id}
+
+curl http://localhost:8080/api/posts/save-one
+
+curl http://localhost:8080/api/posts/save-all
+
+curl http://localhost:8080/api/posts/delete/{id}
+
+curl http://localhost:8080/api/posts/update/{id}
+```
+
+tb_user
+```
+curl http://localhost:8080/api/users
+
+curl http://localhost:8080/api/users/{id}
+
+curl http://localhost:8080/api/users/save-one
+
+curl http://localhost:8080/api/users/save-all
+
+curl http://localhost:8080/api/users/delete/{id}
+
+curl http://localhost:8080/api/users/update/{id}
+```
+
+
+### spring-webflux
+
+```
+curl http://localhost:8082/api/request
+```
