@@ -22,10 +22,15 @@ whatap.agent-2.2.5.jar
 
 [whatap.conf]
 ```
+weaving=spring-boot-2.7.x,tomcat9
+```
+
+ex. 
+[whatap.conf]
+```
 mtrace_rate=100
 trace_basetime=0
 trace_http_header_enabled=true
-trace_kafka_header_enabled=true
 trace_sql_param_enabled=true
 weaving=spring-boot-2.7.x,tomcat9
 ```
@@ -37,11 +42,17 @@ weaving=spring-boot-2.7.x,tomcat9
 
 [whatap.conf]
 ```
+springboot_tomcat10_enabled=true
+weaving=spring-boot-3.x,tomcat10
+```
+
+ex.
+[whatap.conf]
+```
 mtrace_rate=100
 springboot_tomcat10_enabled=true
 trace_basetime=0
 trace_http_header_enabled=true
-trace_kafka_header_enabled=true
 trace_sql_param_enabled=true
 weaving=spring-boot-3.x,tomcat10
 ```
