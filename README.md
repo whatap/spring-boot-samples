@@ -128,6 +128,24 @@ curl http://localhost:8080/api/users/delete/{id}
 curl http://localhost:8080/api/users/update/{id}
 ```
 
+### spring-web
+
+#### spring-web5_3
+
+```
+curl http://localhost:8080/api/request/rt
+
+curl http://localhost:8080/api/request/rt/httpclient4
+```
+
+#### spring-web6
+
+```
+curl http://localhost:8080/api/request/rt
+
+curl http://localhost:8080/api/request/rt/httpclient5
+```
+
 
 ### spring-webflux
 

@@ -5,17 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.whatap.test</groupId>
-    <artifactId>spring-boot-samples</artifactId>
+    <artifactId>spring-web6</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>spring-boot-samples</name>
+    <name>spring-web6</name>
 
     <modules>
-        <module>spring-gateway</module>
-        <module>spring-kafka</module>
-        <module>spring-r2dbc</module>
-        <module>spring-web</module>
-        <module>spring-webflux</module>
+        <module>spring-web6-tomcat</module>
+        <module>spring-web6-undertow</module>
     </modules>
 
 </project>
