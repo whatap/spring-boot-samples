@@ -1,4 +1,4 @@
-package io.whatap.test;
+package io.whatap.test.resttemplate;
 
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/api")
-public class DemoController {
+public class RestTemplateController {
 
     @GetMapping(value = "/request/rt")
     public String test() {
