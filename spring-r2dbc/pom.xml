@@ -11,6 +11,9 @@
     <name>spring-r2dbc</name>
 
     <modules>
+        <module>r2dbc-mysql-asyncer-webflux-netty</module>
+        <module>r2dbc-mysql-asyncer-webflux-tomcat</module>
+        <module>r2dbc-mysql-asyncer-webflux-undertow</module>
         <module>r2dbc-mysql-jasync-webflux-netty</module>
         <module>r2dbc-mysql-jasync-webflux-tomcat</module>
         <module>r2dbc-mysql-jasync-webflux-undertow</module>

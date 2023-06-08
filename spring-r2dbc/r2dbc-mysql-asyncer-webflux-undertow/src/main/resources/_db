@@ -1,0 +1,2 @@
+CREATE TABLE tb_post(id BIGINT AUTO_INCREMENT, title varchar(255), author varchar(255), content TEXT, PRIMARY KEY (id));
+CREATE TABLE tb_user(id BIGINT AUTO_INCREMENT, name varchar(45) NOT NULL, age INT NOT NULL, info  TEXT, ord decimal, created_at datetime, PRIMARY KEY (id));
