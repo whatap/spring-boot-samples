@@ -5,7 +5,8 @@ import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDateTime;
 
-@Table(name = "tb_user")
+//@Table(name = "tb_user")
+@Table(value = "tb_user")
 public class User {
 
     @Id
