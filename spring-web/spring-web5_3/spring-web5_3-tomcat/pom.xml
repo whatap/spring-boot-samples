@@ -5,8 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.2</version> <!-- 2020.0.0 ~ 2020.0.3 -->
-		<!--<version>2.7.12</version>--> <!-- 2021.0.3 ~ -->
+		<!--<version>2.5.2</version>--> <!-- 2020.0.0 ~ 2020.0.3 -->
+		<version>2.7.5</version> <!-- 2021.0.3 ~ -->
 		<!--<version>3.1.0</version>--> <!-- 2022.0.1 ~ -->
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
@@ -19,8 +19,8 @@
 		<java.version>1.8</java.version>
 		<!--<java.version>17</java.version>-->
 		<apache.httpclient.version>4.5.14</apache.httpclient.version>
-		<spring-cloud.version>2020.0.3</spring-cloud.version>
-		<!--<spring-cloud.version>2021.0.7</spring-cloud.version>-->
+		<!--<spring-cloud.version>2020.0.3</spring-cloud.version>-->
+		<spring-cloud.version>2021.0.7</spring-cloud.version>
 		<!--<spring-cloud.version>2022.0.3</spring-cloud.version>-->
 	</properties>
 	<dependencies>
@@ -57,6 +57,20 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+
+		<!-- okhttp3 -->
+		<!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>4.9.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/logging-interceptor -->
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>logging-interceptor</artifactId>
+			<version>4.9.3</version>
 		</dependency>
 
 		<dependency>
