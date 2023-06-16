@@ -22,7 +22,7 @@ whatap.agent-2.2.5.jar
 
 [whatap.conf]
 ```
-weaving=spring-boot-2.7.x,tomcat9
+weaving=spring-boot-2.7,tomcat9
 ```
 
 ex. 
@@ -32,7 +32,7 @@ mtrace_rate=100
 trace_basetime=0
 trace_http_header_enabled=true
 trace_sql_param_enabled=true
-weaving=spring-boot-2.7.x,tomcat9
+weaving=spring-boot-2.7,tomcat9
 ```
 
 
@@ -42,19 +42,17 @@ weaving=spring-boot-2.7.x,tomcat9
 
 [whatap.conf]
 ```
-springboot_tomcat10_enabled=true
-weaving=spring-boot-3.x,tomcat10
+weaving=spring-boot-3.0,tomcat10
 ```
 
 ex.
 [whatap.conf]
 ```
 mtrace_rate=100
-springboot_tomcat10_enabled=true
 trace_basetime=0
 trace_http_header_enabled=true
 trace_sql_param_enabled=true
-weaving=spring-boot-3.x,tomcat10
+weaving=spring-boot-3.0,tomcat10
 ```
 
 <br/>
@@ -132,18 +130,44 @@ curl http://localhost:8080/api/users/update/{id}
 
 #### spring-web5_3
 
+rest template
 ```
 curl http://localhost:8080/api/request/rt
 
 curl http://localhost:8080/api/request/rt/httpclient4
 ```
 
+feign-client
+```
+curl http://localhost:8080/api/request/feign?title=title&message=message
+```
+
+okhttp3
+```
+curl http://localhost:8080/api/request/ok3
+
+curl http://localhost:8080/api/request/ok3?title=title&message=message
+```
+
 #### spring-web6
 
+rest template
 ```
 curl http://localhost:8080/api/request/rt
 
-curl http://localhost:8080/api/request/rt/httpclient5
+curl http://localhost:8080/api/request/rt/httpclient4
+```
+
+feign-client
+```
+curl http://localhost:8080/api/request/feign?title=title&message=message
+```
+
+okhttp3
+```
+curl http://localhost:8080/api/request/ok3
+
+curl http://localhost:8080/api/request/ok3?title=title&message=message
 ```
 
 
